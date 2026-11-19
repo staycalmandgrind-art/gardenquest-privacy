@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Garden Quest — a cozy pixel farming adventure</title>
+<meta name="description" content="Garden Quest is a cozy pixel-art farming adventure: grow a farm, befriend a whole town, and explore the forest beyond it. From SW12H Studios.">
+<meta property="og:title" content="Garden Quest">
+<meta property="og:description" content="A cozy pixel-art farming adventure. Grow a farm, befriend a town, explore the forest beyond it.">
+<meta property="og:image" content="shot_00.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<style>
+  :root{
+    --bg:#121a0f; --panel:#1b2616; --line:#2f4322;
+    --ink:#f1efe2; --muted:#9fb98a; --leaf:#bfe08a; --gold:#ffd54f;
+    color-scheme: dark;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:Nunito,system-ui,-apple-system,Segoe UI,sans-serif; line-height:1.6;
+    padding-left:max(18px,env(safe-area-inset-left,0px));
+    padding-right:max(18px,env(safe-area-inset-right,0px));
+  }
+  .wrap{max-width:900px;margin:0 auto;padding-block:40px 64px}
+  header{text-align:center;margin-bottom:38px}
+  header img{width:min(420px,78vw);height:auto;display:block;margin:0 auto 14px;image-rendering:pixelated}
+  .tag{font-size:clamp(17px,2.6vw,21px);color:var(--leaf);font-weight:700;margin:0 0 6px}
+  .sub{color:var(--muted);font-size:15px;margin:0}
+
+  .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:26px 0 8px}
+  .btn{display:inline-block;padding:13px 24px;border-radius:12px;text-decoration:none;
+       font-weight:800;font-size:16px;border:1px solid transparent}
+  .btn.play{background:linear-gradient(#6ed05c,#4ea33f);color:#fff;box-shadow:0 3px 0 #2f6a26}
+  .btn.apple{background:linear-gradient(#f4f1e6,#ddd8c6);color:#1b2616;box-shadow:0 3px 0 #9a957f}
+  .btn.ghost{background:var(--panel);color:var(--ink);border-color:var(--line)}
+  .btn:hover{filter:brightness(1.08)}
+
+  section{margin-top:44px}
+  h2{font-size:20px;margin:0 0 14px;color:var(--gold);letter-spacing:.3px}
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+  .shots img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+
+  .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;padding:0;list-style:none;margin:0}
+  .feats li{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .feats b{display:block;color:var(--leaf);margin-bottom:4px;font-size:16px}
+  .feats span{color:var(--muted);font-size:14.5px}
+
+  footer{margin-top:52px;border-top:1px solid var(--line);padding-top:20px;
+         display:flex;gap:10px 22px;flex-wrap:wrap;align-items:center;justify-content:center;
+         font-size:14.5px}
+  footer a{color:var(--leaf);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  .by{width:100%;text-align:center;color:var(--muted);font-size:13.5px;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="logo.png" alt="Garden Quest">
+    <p class="tag">A cozy pixel-art farming adventure.</p>
+    <p class="sub">Grow a farm, befriend a whole town, and explore the forest beyond it.</p>
+    <div class="cta">
+      <a class="btn play" href="https://play.google.com/store/apps/details?id=com.sw12hstudios.gardenquest">Get it on Google Play</a>
+      <a class="btn apple" href="https://apps.apple.com/app/id6796838161">Download on the App Store</a>
+      <a class="btn ghost" href="https://discord.gg/DM9cwm4W8y">Join the Discord</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>A look at the valley</h2>
+    <div class="shots">
+      <img src="shot_00.jpg" alt="Garden Quest — the farm">
+      <img src="shot_03.jpg" alt="Garden Quest — the town">
+      <img src="shot_07.jpg" alt="Garden Quest — the forest">
+    </div>
+  </section>
+
+  <section>
+    <h2>What you'll do</h2>
+    <ul class="feats">
+      <li><b>Grow your farm</b><span>Plant and water dozens of crops, raise animals, plant an orchard, and build the farm up season by season.</span></li>
+      <li><b>Know everyone</b><span>A town full of neighbours with their own homes, routines and stories. Make friends, give gifts, get invited in.</span></li>
+      <li><b>Explore the forest</b><span>Past the farm gate there's a deep forest to delve, with gear to craft, creatures to meet and plenty worth bringing home.</span></li>
+      <li><b>Play together</b><span>Visit a friend's garden, help with the watering, and take on the rec centre's sports and mini-games.</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="delete.html">Delete My Data</a>
+    <a href="mailto:staycalmandgrind@gmail.com">Support</a>
+    <div class="by">Garden Quest © SW12H Studios</div>
+  </footer>
+
+</div>
+</body>
+</html>
